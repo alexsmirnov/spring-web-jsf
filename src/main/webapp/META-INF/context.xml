@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource auth="Container"
+    driverClassName="org.h2.Driver"
+    factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+    jdbcInterceptors="ConnectionState;SlowQueryReportJmx;StatementCache(max=100)"
+    name="jdbc/myDB"
+    jmxEnabled="true"
+    password=""
+    type="javax.sql.DataSource"
+    url="jdbc:h2:mem:myDB;DB_CLOSE_DELAY=-1"
+    username="sa"/>
+</Context>
